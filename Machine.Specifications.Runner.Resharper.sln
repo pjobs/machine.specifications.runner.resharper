@@ -1,13 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine.Specifications.ReSharperRunner.Debug.VS2010", "Machine.Specifications.ReSharperRunner.Debug.VS2010\Machine.Specifications.ReSharperRunner.Debug.VS2010.csproj", "{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machine.Specifications.Runner.Resharper.Provider", "src\Machine.Specifications.Runner.Resharper.Provider\Machine.Specifications.Runner.Resharper.Provider.csproj", "{0AC9AC80-D8CC-4CB7-BB85-312168096781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine.Specifications.ReSharper.Provider.9.2", "Machine.Specifications.ReSharper.Provider.9.2\Machine.Specifications.ReSharper.Provider.9.2.csproj", "{0AC9AC80-D8CC-4CB7-BB85-312168096781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machine.Specifications.Runner.Resharper.Runner", "src\Machine.Specifications.Runner.Resharper.Runner\Machine.Specifications.Runner.Resharper.Runner.csproj", "{585AE31B-2361-4A4E-8E9E-32B808D280A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine.Specifications.ReSharper.Runner.9.2", "Machine.Specifications.ReSharper.Runner.9.2\Machine.Specifications.ReSharper.Runner.9.2.csproj", "{585AE31B-2361-4A4E-8E9E-32B808D280A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machine.Specifications.Runner.Resharper", "src\Machine.Specifications.Runner.Resharper\Machine.Specifications.Runner.Resharper.csproj", "{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{9725D2B9-232B-45A2-92CC-4F7CDE717C94}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		build.cake = build.cake
+		CONTRIBUTING.md = CONTRIBUTING.md
+		install-plugin.ps1 = install-plugin.ps1
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AC9AC80-D8CC-4CB7-BB85-312168096781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AC9AC80-D8CC-4CB7-BB85-312168096781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC9AC80-D8CC-4CB7-BB85-312168096781}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,8 +32,15 @@ Global
 		{585AE31B-2361-4A4E-8E9E-32B808D280A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{585AE31B-2361-4A4E-8E9E-32B808D280A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{585AE31B-2361-4A4E-8E9E-32B808D280A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A3A8CA-CAEF-4DC6-83C9-E19A0C720B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96104B85-D662-42D9-8F61-E8D8C126C3A8}
 	EndGlobalSection
 EndGlobal
